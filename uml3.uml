@@ -1,0 +1,17 @@
+@startuml
+actor User
+
+rectangle ExpenseManagementApp {                //user case
+    usecase "Add Expense" as UC_Add
+    usecase "Edit Expense" as UC_Edit
+    usecase "Delete Expense" as UC_Delete
+    usecase "View Expenses" as UC_View
+    usecase "Update Total" as UC_Total
+}
+
+User -> UC_Add
+User -> UC_Edit
+User -> UC_Delete
+User -> UC_View
+User -> UC_Total
+@enduml
